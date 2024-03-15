@@ -1,1 +1,1 @@
-export const API_BASE_URL = "/api/entries";
+export const API_BASE_URL = "https://zany-ray-yoke.cyclic.app/api/entries";
