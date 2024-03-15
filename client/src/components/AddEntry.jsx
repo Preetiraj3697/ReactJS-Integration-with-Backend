@@ -8,11 +8,9 @@ const AddEntry = () => {
 
   const handleAddEntry = async () => {
     try {
-      await axios.post(`${API_BASE_URL}/add`, { name, data });
-      console.log('Entry added successfully');
-        // Optionally, you can clear the input fields after adding the entry
-         // Reload the page to fetch the latest data
-      window.location.reload();
+      const response = await axios.post(`${API_BASE_URL}/add`, { name, data });
+      alert('Entry added successfully'); // Display pop-up message
+      setEntries([...entries, response.data]);
       setName('');
       setData('');
     } catch (error) {
