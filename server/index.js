@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ["https://deploy-mern-frontend.vercel.app"],
+        origin: ["https://react-js-integration-with-frontend-backend.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
