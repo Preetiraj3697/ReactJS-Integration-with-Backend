@@ -115,5 +115,22 @@ npm start
 
 ## ScreenShot
 
+![localhost_5173_(Nest Hub Max) (4)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/b5efd2b3-3c57-41a4-b94f-2812b110102b)
+![localhost_5173_(Nest Hub Max) (5)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/37abff45-94aa-4b55-b62b-209e3f85a596)
+![localhost_5173_(Nest Hub Max) (6)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/27680fdf-db7d-48ce-8802-4b233c047824)
+![localhost_5173_(Nest Hub Max) (7)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/08a8544c-697d-4abe-b110-31701ad13df3)
+![localhost_5173_(Nest Hub Max) (8)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/6f92d278-1d35-4725-9b35-09f859c65ca0)
+
+
+![Screenshot (34)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/aea7d0be-b99c-44e6-9f99-ada8abc28ca2)
+![Screenshot (35)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/cdb0bcf5-e525-46c9-b1f8-eb55ce006ea7)
+![Screenshot (37)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/7787a7ba-d15f-4266-95cd-94af490f92da)
+![Screenshot (38)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/cefdd124-3145-413a-a449-235a6bab456c)
+![Screenshot (39)](https://github.com/Preetiraj3697/ReactJS-Integration-with-Backend/assets/107460745/f836ada0-ff50-460d-9e42-9b0d66f17e23)
+
+
+
+
+
 Feel free to reach out if you have any questions or need further assistance!
 
