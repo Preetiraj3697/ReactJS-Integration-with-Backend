@@ -8,11 +8,10 @@ const AddEntry = () => {
 
   const handleAddEntry = async () => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/add`, { name, data });
+      await axios.post(`${API_BASE_URL}/add`, { name, data });
       alert('Entry added successfully'); // Display pop-up message
-      setEntries([...entries, response.data]);
-      setName('');
-      setData('');
+      setName(''); // Clear input field for name
+      setData(''); // Clear input field for data
     } catch (error) {
       console.error('Error adding entry:', error);
     }

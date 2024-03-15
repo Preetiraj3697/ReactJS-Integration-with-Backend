@@ -40,6 +40,16 @@ const AllUser = () => {
     }
   };
 
+  const handleDelete = async (userId) => {
+    try {
+      await axios.delete(`${API_BASE_URL}/${userId}`);
+      console.log('User deleted successfully');
+      fetchUser(); // Refresh user data after deletion
+    } catch (error) {
+      console.error('Error deleting user:', error);
+    }
+  };
+  
   const handleCancel = () => {
     setShowModal(false);
   };
@@ -53,6 +63,7 @@ const AllUser = () => {
             <h3>Name: {item.name}</h3>
             <p>Data: {item.data}</p>
             <button onClick={() => handleUpdateClick(item)}>Update</button>
+            <button onClick={() => handleDelete(item._id)}>Delete</button>
           </div>
         ))}
       </div>

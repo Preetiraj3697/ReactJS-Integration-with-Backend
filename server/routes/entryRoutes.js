@@ -46,6 +46,24 @@ router.post('/update/:id', async (req, res) => {
   }
 });
 
+// Delete existing entry
+router.delete('/:id', async (req, res) => {
+  try {
+    const id = req.params.id;
+    const deletedEntry = await Entry.findByIdAndDelete(id);
+
+    // If entry is deleted, decrement add count and save to database
+    if (deletedEntry) {
+      const count = await Count.findOneAndUpdate({}, { $inc: { addCount: -1 } }, { upsert: true, new: true });
+      res.json({ message: 'Entry deleted successfully', addCount: count.addCount });
+    } else {
+      res.status(404).json({ message: 'Entry not found' });
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Get count of add and update API calls
 router.get('/count', async (req, res) => {
   try {
