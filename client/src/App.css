@@ -1,35 +1,36 @@
-body {
-  margin: 0;
-  padding: 0;
-}
 /* styles.css */
-
+body{
+  margin:0;
+  padding:0;
+}
 /* Style for user data display */
 .user-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
-  padding:20px;
+  padding: 20px;
 }
 
 .user-card {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  width: 30%; /* Each card occupies 23% of the container width */
+  width: 30%; /* Each card occupies 30% of the container width */
   padding: 10px;
   margin-bottom: 20px;
 }
-.user-card button{
+
+.user-card button {
   width: 40%;
   padding: 10px;
   background-color: #007bff;
   color: #fff;
-  margin-right:10px;
-  margin-top:20px;
+  margin-right: 10px;
+  margin-top: 20px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
+
 .modal {
   position: fixed;
   top: 0;
@@ -48,30 +49,62 @@ body {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin: "auto";
+  margin: auto;
 }
+
 .modal-content input {
   width: 90%;
   padding: 8px;
-  margin:auto;
+  margin: auto;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+
 .modal-content label {
   display: block;
   margin-bottom: 10px;
 }
+
 .modal-content button {
   width: 40%;
   padding: 10px;
   background-color: #007bff;
   color: #fff;
-  margin-right:10px;
-  margin-top:20px;
+  margin-right: 10px;
+  margin-top: 20px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
+
 .modal-content button:last-child {
   margin-right: 0;
+}
+
+/* Media Queries for Tablet */
+@media screen and (max-width: 1024px) {
+  .user-card {
+    width: 45%; /* Adjust width for tablet screens */
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 600px) {
+  .user-container {
+    padding: 10px; /* Adjust padding for mobile screens */
+  }
+
+  .user-card {
+    width: 100%; /* Each card occupies full width on mobile */
+  }
+
+  .user-card button {
+    width: 100%; /* Button occupies full width on mobile */
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .modal-content {
+    width: 80%; /* Adjust modal width for mobile */
+  }
 }

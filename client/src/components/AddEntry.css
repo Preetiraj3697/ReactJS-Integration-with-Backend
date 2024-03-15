@@ -41,3 +41,30 @@
     margin-top: 10px;
   }
   
+/* Media Queries for Tablet */
+@media screen and (max-width: 1024px) {
+  .container {
+      max-width: 80%; /* Adjust max-width for tablet screens */
+  }
+
+  .submit-btn {
+      width: 50%; /* Adjust button width for tablet screens */
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 600px) {
+  .container {
+      padding: 10px; /* Adjust padding for mobile screens */
+  }
+
+  .input-field input {
+      width: 90%; /* Input field occupies full width on mobile */
+  }
+
+  .submit-btn {
+      width: 95%; /* Button occupies full width on mobile */
+      margin-top: 20px; /* Increase margin-top for better spacing */
+      text-align: center;
+  }
+}

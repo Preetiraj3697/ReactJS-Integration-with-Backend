@@ -1,32 +1,63 @@
 /* navbarStyles.css */
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    background: aqua;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  background: aqua;
+  text-align: center;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: blue;
+}
+
+.navbar h2 {
+  margin-left: 20px;
+}
+
+.navbar h2:nth-child(1) {
+  margin-left: 0;
+}
+
+/* Media Queries for Tablet */
+@media screen and (max-width: 1024px) {
+  .navbar {
+      flex-direction: row;
+      align-items: center;
+      font-size:16px;
+  }
+
+  .navbar-list {
+      flex-direction: row;
+      gap: 10px;
+      font-size: 13px;
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 600px) {
+  .navbar {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .navbar h2 {
+      margin: 10px 0;
   }
   .navbar-list{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
+    font-size:x-small;
   }
-  .navbar a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .navbar a:hover {
-    color: blue;
-  }
-  
-  .navbar h2 {
-    margin-left: 20px;
-  }
-  
-  .navbar h2:nth-child(1) {
-    margin-left: 0;
-  }
-  
+}
