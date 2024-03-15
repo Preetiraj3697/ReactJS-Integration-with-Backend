@@ -1,1 +1,1 @@
-export const API_BASE_URL = "https://zany-ray-yoke.cyclic.app/api/entries";
+export const API_BASE_URL = "https://react-js-integration-with-backend-yaf6.vercel.app/api/entries";
